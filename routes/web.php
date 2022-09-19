@@ -32,3 +32,15 @@ Route::get('/fasilitas',[KamarController::class,'index'])->name('fasilitas');
 Route::post('/simpan-fasilitas',[KamarController::class,'masukin_data'])->name('simpan-fasilitas');
 Route::post('/edit-fasilitas/{id}',[KamarController::class,'editsimpan'])->name('edit-fasiliats');
 Route::get('/delete-fasilitas/{id}',[KamarController::class,'delete'])->name('deletefasilitas');
+
+Route::get('/user', function () {
+    return view('user.home');
+});
+
+Route::get('/user-kamar', function () {
+    return view('user.kamar');
+});
+
+Route::get('/user-home', function () {
+    return view('user.home');
+});
