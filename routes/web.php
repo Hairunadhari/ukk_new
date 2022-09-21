@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KamarController;
+use App\Http\Controllers\FasilitasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,12 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('template/app');
 });
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+});
+Route::get('/resepsionis', function () {
+    return view('resepsionis/dashboard');
+});
 
 // kamar
 Route::get('/kamar',[KamarController::class,'index'])->name('kamar');
@@ -28,10 +35,10 @@ Route::post('/edit-simpan/{id}',[KamarController::class,'editsimpan'])->name('ed
 Route::get('/delete/{id}',[KamarController::class,'delete'])->name('deletekamar');
 
 // fasilitas
-Route::get('/fasilitas',[KamarController::class,'index'])->name('fasilitas');
-Route::post('/simpan-fasilitas',[KamarController::class,'masukin_data'])->name('simpan-fasilitas');
-Route::post('/edit-fasilitas/{id}',[KamarController::class,'editsimpan'])->name('edit-fasiliats');
-Route::get('/delete-fasilitas/{id}',[KamarController::class,'delete'])->name('deletefasilitas');
+Route::get('/fasilitas',[FasilitasController::class,'index'])->name('fasilitas');
+Route::post('/simpan-fasilitas',[FasilitasController::class,'masukin_data'])->name('simpan-fasilitas');
+Route::post('/edit-fasilitas/{id}',[FasilitasController::class,'editsimpan'])->name('edit-fasiliats');
+Route::get('/delete-fasilitas/{id}',[FasilitasController::class,'delete'])->name('delete-fasilitas');
 
 Route::get('/user', function () {
     return view('user.home');
@@ -44,3 +51,6 @@ Route::get('/user-kamar', function () {
 Route::get('/user-home', function () {
     return view('user.home');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

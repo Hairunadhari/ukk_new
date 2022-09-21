@@ -13,13 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('resepsionis', function (Blueprint $table) {
-            $table->id();
-            $table->string('nama_pemesan');
-            $table->integer('no_kamar');
-            $table->date('cek_in');
-            $table->date('cek_out');
-            $table->timestamps();
+        Schema::table('users', function (Blueprint $table) {
+            $table->enum('role', ['admin', 'resepsionis','user'])->default('admin')->after('remember_token');
+      
         });
     }
 
@@ -30,6 +26,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('resepsionis');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('role');
+        });
     }
 };

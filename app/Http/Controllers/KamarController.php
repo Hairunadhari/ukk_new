@@ -30,7 +30,6 @@ class KamarController extends Controller
     {
         $kamar = Kamar::find($id);
         $kamar->delete();
-        
         return redirect()->route('kamar')->with('success','data berhasil hapus  ');
     }
 }
