@@ -45,7 +45,7 @@
                                         <li><a class="active" href="/user-home">Home</a></li>
                                         <li><a href="/user-kamar">Kamar</a></li>
                                         <li><a href="/user-fasilitas">Fasilitas</a></li>
-                                        <li><a href="#">Login</li>      
+                                        <li><a href="/user-login">Login</li>      
                                     </ul>
                                 </nav>
                             </div>
@@ -55,7 +55,7 @@
                             <div class="book_room">
                                
                                 <div class="book_btn d-none d-lg-block">
-                                    <a class="popup-with-form" href="#test-form">Pesan Kamar</a>
+                                <a class="popup-with-form" href="#test-form">Pesan</a>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                         <div class="col-xl-12">
                             <div class="slider_text text-center">
                                 <h3>VIGOOD</h3>
-                                <p>Happy Holidays at Vigood Hotel</p>
+                                <p>Selamat Berlibur di Hotel VIGOOD</p>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                         <div class="col-xl-12">
                             <div class="slider_text text-center">
                                 <h3>VIGOOD</h3>
-                                <p>Happy Holidays at Vigood Hotel</p>
+                                <p>Selamat Berlibur di Hotel VIGOOD</p>
                             </div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                         <div class="col-xl-12">
                             <div class="slider_text text-center">
                                 <h3>VIGOOD</h3>
-                                <p>Happy Holidays at Vigood Hotel</p>
+                                <p>Selamat Berlibur di Hotel VIGOOD</p>
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                         <div class="col-xl-12">
                             <div class="slider_text text-center">
                                 <h3>VIGOOD</h3>
-                                <p>Happy Holidays at Vigood Hotel</p>
+                                <p>Selamat Berlibur di Hotel VIGOOD</p>
                             </div>
                         </div>
                     </div>
@@ -131,13 +131,11 @@
                 <div class="col-xl-5 col-lg-5">
                     <div class="about_info">
                         <div class="section_title mb-20px">
-                            <span>About Us</span>
-                            <h3> Hotel Mewah
-                                <br>
-                                dengan Alam</h3>
+                            <span>Tentang Kami</span>
+                            <h3> Selamat Datang di VIGOOD HOTEL</h3>
                         </div>
                         <p>hotel vigood adalah hotel tempat penginapan yang nyaman dan memiliki fasiltas yang menarik dan hotel vigood ini mempunyai fasilitas yang amat bagus. bertempat berdekatan dengan alam yang sangat indah</p>
-                        <a href="#" class="line-button">Learn More</a>
+                       
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-7">
@@ -180,14 +178,12 @@
                 <div class="col-xl-5 col-lg-5">
                     <div class="about_info">
                         <div class="section_title mb-20px">
-                            <span>Delicious Food</span>
-                            <h3>We Serve Fresh and <br>
-                                Delicious Food</h3>
+                            <span>Makanan Lezat</span>
+                            <h3>Kami Melayani <br>
+                               Makanan Lezat</h3>
                         </div>
-                        <p>Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare
-                            dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
-                            sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.</p>
-                        <a href="#" class="line-button">Learn More</a>
+                        <p>Makanan Lezat di restoran hotel vigood memiliki beraneka makanan yang sangat lezat. restoran hotel VIGOOD juga buka 24 jam setiap harinya</p>
+                        <a href="/user-fasilitas" class="line-button"> Selengkapnya</a>
                     </div>
                 </div>
             </div>
@@ -201,8 +197,8 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title text-center mb-100">
-                        <span>Featured Rooms</span>
-                        <h3>Choose a Better Room</h3>
+                        <span>Tipe</span>
+                        <h3>Tipe Kamar</h3>
                     </div>
                 </div>
             </div>
@@ -213,10 +209,10 @@
                     <img src="/img/rooms/1.png" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
-                            <h3>Superior Room</h3>
+                            <span>Mulai dari harga 5.000.000/night</span>
+                            <h3>Kamar Mawar</h3>
                         </div>
-                        <a href="#" class="line-button">book now</a>
+                        <a href="/user-kamar" class="line-button">cek</a>
                     </div>
                 </div>
             </div>
@@ -225,10 +221,10 @@
                     <img src="/img/rooms/2.png" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
-                            <h3>Deluxe Room</h3>
+                            <span>Mulai dari harga 4.000.000/night</span>
+                            <h3>Kamar Melati</h3>
                         </div>
-                        <a href="#" class="line-button">book now</a>
+                        <a href="/user-kamar" class="line-button">cek</a>
                     </div>
                 </div>
             </div>
@@ -237,10 +233,10 @@
                     <img src="/img/rooms/3.png" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
-                            <h3>Signature Room</h3>
+                            <span>Mulai dari harga 3.000.000/night</span>
+                            <h3>Kamar Matahari</h3>
                         </div>
-                        <a href="#" class="line-button">book now</a>
+                        <a href="/user-kamar" class="line-button">cek</a>
                     </div>
                 </div>
             </div>
@@ -249,10 +245,10 @@
                     <img src="/img/rooms/4.png" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
-                            <h3>Couple Room</h3>
+                            <span>Mulai dari harga 2.000.000/night</span>
+                            <h3>Kamar Kenanga</h3>
                         </div>
-                        <a href="#" class="line-button">book now</a>
+                        <a href="/user-kamar" class="line-button">cek</a>
                     </div>
                 </div>
             </div>
@@ -278,20 +274,20 @@
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                address
+                            Alamat
                             </h3>
-                            <p class="footer_text"> 200, Green road, Mongla, <br>
-                                New Yor City USA</p>
-                            <a href="#" class="line-button">Get Direction</a>
+                            <p class="footer_text"> Blok . M <br>
+                               Jakarta Selatan</p>
+                            
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                Reservation
+                             Hubungi Kami
                             </h3>
-                            <p class="footer_text">+10 367 267 2678 <br>
-                                reservation@montana.com</p>
+                            <p class="footer_text">0856-9247-6174<br>
+                                reservation@vigood.com</p>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-6 col-lg-2">
@@ -300,10 +296,10 @@
                                 Navigation
                             </h3>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Rooms</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">News</a></li>
+                                <li><a href="/user-home">Home</a></li>
+                                <li><a href="/user-kamar">Kamar</a></li>
+                                <li><a href="/user-fasilitas">Fasilitas</a></li>
+                                <li><a href="/user/login">Login</a></li>
                             </ul>
                         </div>
                     </div>
@@ -312,26 +308,13 @@
                             <h3 class="footer_title">
                                 Newsletter
                             </h3>
-                            <form action="#" class="newsletter_form">
-                                <input type="text" placeholder="Enter your mail">
-                                <button type="submit">Sign Up</button>
-                            </form>
-                            <p class="newsletter_text">Subscribe newsletter to get updates</p>
+                           
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-8 col-md-7 col-lg-9">
-                        <p class="copy_right">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
+     
                     <div class="col-xl-4 col-md-5 col-lg-3">
                         <div class="socail_links">
                             <ul>
@@ -399,7 +382,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                         </select>
                                     </div>
                                     <div class="col-xl-12">
-                                        <button type="submit" class="boxed-btn3">Check Availability</button>
+                                        <a href="/user-pembayaran" type="submit" class="boxed-btn3">Check Availability</a>
                                     </div>
                                 </div>
                             </form>

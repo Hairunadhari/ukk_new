@@ -17,8 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string('nama_pemesan');
             $table->integer('no_kamar');
-            $table->integer('tipe_kamar');
-            $table->bigInteger('no_hp');
             $table->date('cek_in');
             $table->date('cek_out');
             $table->timestamps();

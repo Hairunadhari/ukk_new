@@ -17,7 +17,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="/simpan-kamar" method="POST">
+                        <form action="/admin/simpan-kamar" method="POST">
                             @csrf
                             <div class="mb-3">
                                 <label class="form-label">No Kamar</label>
@@ -105,7 +105,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="/edit-simpan/{{ $data->id }}" method="POST">
+                    <form action="/admin/edit-simpan/{{ $data->id }}" method="POST">
                         @csrf
                         <div class="mb-3">
                             <label class="form-label">No Kamar</label>
@@ -138,10 +138,7 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
-                </div>
+              
             </div>
         </div>
     </div>

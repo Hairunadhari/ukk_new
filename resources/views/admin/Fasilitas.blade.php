@@ -17,29 +17,25 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="/simpan-kamar" method="POST">
+                        <form action="/admin/simpan-fasilitas" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="mb-3">
                                 <label class="form-label">Nama Fasilitas</label>
-                                <input type="text" name="no_kamar" class="form-control">
+                                <input type="text" name="nama_fasilitas" class="form-control">
                              
                             </div>
 
                             <div class="mb-3">
                                 <label class="form-label">Keterangan</label>
-                                <input type="text" name="tipe_kamar" class="form-control">
+                                <input type="text" name="keterangan" class="form-control">
                                   
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Foto</label>
-                                <input type="text" name="harga_kamar" class="form-control">
-                                                          
+                                <label class="form-label">foto</label>
+                                <input type="file" name="foto" class="form-control">
+                                  
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Jumlah Kamar</label>
-                                <input type="text" name="jumlah_kamar" class="form-control">
-                               
-                            </div>
+                            
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
                                 <button type="submit" class="btn btn-primary">Simpan</button>
@@ -57,10 +53,9 @@
                     <tr>
 
                         <th scope="col">No</th>
-                        <th scope="col">No Kamar</th>
-                        <th scope="col">Tipe Kamar</th>
-                        <th scope="col">Harga Kamar</th>
-                        <th scope="col">Jumlah Kamar</th>
+                        <th scope="col">Nama fasiliats</th>
+                        <th scope="col">letrnangn</th>
+                        <th scope="col">foto</th>
                         <th scope="col">Pilihan</th>
 
                     </tr>
@@ -69,21 +64,22 @@
                     @php
                     $no = 1;
                     @endphp
-                    @foreach ($kamar as $k)
+                    @foreach ($fasilitas as $k)
                     <tr>
                         <th scope="row">{{ $no++ }}</th>
-                        <td>{{ $k->no_kamar }}</td>
-                        <td>{{ $k->tipe_kamar }}</td>
-                        <td>{{ $k->harga_kamar }}</td>
-                        <td>{{ $k->jumlah_kamar }}</td>
-
+                        <td>{{ $k->nama_fasilitas }}</td>
+                        <td>{{ $k->keterangan }}</td>
+                        <td>
+                            <img src="{{ asset('fotofasilitas/' .$k->foto)}}" alt="" style="width:80px; height: 100px ;">
+                                        
+                        </td>
                         <td>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop-{{ $k->id }}">
                                 Edit
                             </button>
-                            <a href="#" class="btn btn-danger delete" data-id="{{ $k->id }}" data-nama="{{ $k->no_kamar }}">Hapus</a>
+                            <a href="#" class="btn btn-danger delete2" data-id="{{ $k->id }}" data-nama="{{ $k->nama_fasilitas }}">Hapus</a>
                         </td>
                     </tr>
                     @endforeach
@@ -94,7 +90,7 @@
         </div>
     </div>
 
-@foreach ($kamar as $data)
+@foreach ($fasilitas as $data)
         <!-- Modal -->
     <div class="modal fade" id="staticBackdrop-{{ $data->id }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -105,32 +101,24 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="/edit-simpan/{{ $data->id }}" method="POST">
+                    <form action="/admin/edit-fasilitas/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
-                            <label class="form-label">No Kamar</label>
-                            <input type="text" name="no_kamar" class="form-control" value="{{ $data->no_kamar }}">
+                            <label class="form-label">Nama fasilitas</label>
+                            <input type="text" name="nama_fasilitas" class="form-control" value="{{ $data->nama_fasilitas }}">
                           
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">Tipe Kamar</label>
-                            <input type="text" name="tipe_kamar" class="form-control" value="{{ $data->tipe_kamar }}">
+                            <label class="form-label">keterangan</label>
+                            <input type="text" name="keterangan" class="form-control" value="{{ $data->keterangan }}">
                             
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">Harga Kamar</label>
-                            <input type="text" name="harga_kamar" class="form-control" value="{{ $data->harga_kamar }}">
-                            @error('harga_kamar')
-                          <div class="text-warning">{{ $message }}</div>
-                      @enderror
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Jumlah Kamar</label>
-                            <input type="text" name="jumlah_kamar" class="form-control" value="{{ $data->jumlah_kamar }}">
-                            
+                            <label class="form-label">foto</label>
+                            <input type="file" name="foto" class="form-control" value="{{ $data->foto }}">
+                          
                         </div>
 
 
@@ -138,10 +126,7 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
-                </div>
+               
             </div>
         </div>
     </div>

@@ -43,9 +43,9 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a  href="/user-home">Home</a></li>
-                                        <li><a class="active" href="/user-kamar">Kamar</a></li>
-                                        <li><a href="/user-fasilitas">Fasilitas</a></li>
-                                        <li><a href="/login">Login</li>      
+                                        <li><a  href="/user-kamar">Kamar</a></li>
+                                        <li><a class="active" href="/user-fasilitas">Fasilitas</a></li>
+                                        <li><a href="#">Login</li>      
                                     </ul>
                                 </nav>
                             </div>
@@ -54,14 +54,12 @@
                         <div class="col-xl-5 col-lg-4 d-none d-lg-block">
                             <div class="book_room">
                                
-                                <div style="">
-                                    <a class="popup-with-form" style="color: white;" href="#test-form">Book A Room</a>
-                                </div>
+                                
+                                    <a class="btn btn-primary" href="#test-form">Pesan</a>
+                               
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -78,81 +76,19 @@
                         <div class="col-xl-12">
                             <div class="slider_text text-center">
                                 <h3>VIGOOD</h3>
-                                <p>Happy Holidays at Vigood Hotel</p>
+                                <p>Selamaat Berlibur di Hotel VIGOOD</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="single_slider  d-flex align-items-center justify-content-center slider_bg_2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="slider_text text-center">
-                                <h3>VIGOOD</h3>
-                                <p>Happy Holidays at Vigood Hotel</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="slider_text text-center">
-                                <h3>VIGOOD</h3>
-                                <p>Happy Holidays at Vigood Hotel</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slider  d-flex align-items-center justify-content-center slider_bg_2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="slider_text text-center">
-                                <h3>VIGOOD</h3>
-                                <p>Happy Holidays at Vigood Hotel</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     <!-- slider_area_end -->
 
     <!-- about_area_start -->
-    <div class="about_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-lg-5">
-                    <div class="about_info">
-                        <div class="section_title mb-20px">
-                            <span>About Us</span>
-                            <h3> Hotel Mewah
-                                <br>
-                                dengan Alam</h3>
-                        </div>
-                        <p>hotel vigood adalah hotel tempat penginapan yang nyaman dan memiliki fasiltas yang menarik dan hotel vigood ini mempunyai fasilitas yang amat bagus. bertempat berdekatan dengan alam yang sangat indah</p>
-                        <a href="#" class="line-button">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-xl-7 col-lg-7">
-                    <div class="about_thumb d-flex">
-                        <div class="/img_1">
-                            <img src="/img/about/about_1.png" alt="">
-                        </div>
-                        <div class="/img_2">
-                            <img src="/img/about/about_2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- about_area_end -->
 
     <!-- offers_area_start -->
@@ -164,35 +100,7 @@
     <!-- video_area_end -->
 
     <!-- about_area_start -->
-    <div class="about_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-7 col-lg-7">
-                    <div class="about_thumb2 d-flex">
-                        <div class="/img_1">
-                            <img src="/img/about/1.png" alt="">
-                        </div>
-                        <div class="/img_2">
-                            <img src="/img/about/2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-5">
-                    <div class="about_info">
-                        <div class="section_title mb-20px">
-                            <span>Delicious Food</span>
-                            <h3>We Serve Fresh and <br>
-                                Delicious Food</h3>
-                        </div>
-                        <p>Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare
-                            dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
-                            sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.</p>
-                        <a href="#" class="line-button">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- about_area_end -->
 
     <!-- features_room_startt -->
@@ -201,8 +109,8 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title text-center mb-100">
-                        <span>Featured Rooms</span>
-                        <h3>Choose a Better Room</h3>
+                       
+                        <h3>Fasilitas</h3>
                     </div>
                 </div>
             </div>
@@ -210,49 +118,46 @@
         <div class="rooms_here">
             <div class="single_rooms">
                 <div class="room_thumb">
-                    <img src="/img/rooms/1.png" alt="">
+                    <img src="/img/rooms/resepsionis2.jpg" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
-                            <h3>Superior Room</h3>
+                            <h3>Resepsionis 24/7</h3>
                         </div>
-                        <a href="#" class="line-button">book now</a>
                     </div>
                 </div>
             </div>
             <div class="single_rooms">
                 <div class="room_thumb">
-                    <img src="/img/rooms/2.png" alt="">
+                    <img src="/img/rooms/gym2.jpg" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
-                            <h3>Deluxe Room</h3>
+                          
+                            <h3>Gym</h3>
                         </div>
-                        <a href="#" class="line-button">book now</a>
                     </div>
                 </div>
             </div>
             <div class="single_rooms">
                 <div class="room_thumb">
-                    <img src="/img/rooms/3.png" alt="">
+                    <img src="/img/rooms/lounge2.jpg" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
-                            <h3>Signature Room</h3>
+                           
+                            <h3>Lounge</h3>
                         </div>
-                        <a href="#" class="line-button">book now</a>
+                      
                     </div>
                 </div>
             </div>
             <div class="single_rooms">
                 <div class="room_thumb">
-                    <img src="/img/rooms/4.png" alt="">
+                    <img src="/img/rooms/swimming2.jpg" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
-                            <h3>Couple Room</h3>
+                          
+                            <h3>Swimming Pool</h3>
                         </div>
-                        <a href="#" class="line-button">book now</a>
+                       
                     </div>
                 </div>
             </div>
@@ -271,27 +176,27 @@
     <!-- instragram_area_end -->
 
     <!-- footer -->
-    <footer class="footer">
+     <footer class="footer">
         <div class="footer_top">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                address
+                                alamat
                             </h3>
-                            <p class="footer_text"> 200, Green road, Mongla, <br>
-                                New Yor City USA</p>
-                            <a href="#" class="line-button">Get Direction</a>
+                            <p class="footer_text"> Jakarta Selatan No. 05<br>
+                                Kota Jakarta</p>
+                            
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                Reservation
+                             Pemesanan
                             </h3>
-                            <p class="footer_text">+10 367 267 2678 <br>
-                                reservation@montana.com</p>
+                            <p class="footer_text">+62856-9247-6174<br>
+                              vigood@gmail.com</p>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-6 col-lg-2">
@@ -301,24 +206,13 @@
                             </h3>
                             <ul>
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">Rooms</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">News</a></li>
+                                <li><a href="#">Kamar</a></li>
+                                <li><a href="#">Faslitas</a></li>
+                                <li><a href="#">Login</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-lg-4">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Newsletter
-                            </h3>
-                            <form action="#" class="newsletter_form">
-                                <input type="text" placeholder="Enter your mail">
-                                <button type="submit">Sign Up</button>
-                            </form>
-                            <p class="newsletter_text">Subscribe newsletter to get updates</p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -326,33 +220,6 @@
             <div class="container">
                 <div class="footer_border"></div>
                 <div class="row">
-                    <div class="col-xl-8 col-md-7 col-lg-9">
-                        <p class="copy_right">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                    <div class="col-xl-4 col-md-5 col-lg-3">
-                        <div class="socail_links">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
