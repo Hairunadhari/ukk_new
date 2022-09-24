@@ -21,7 +21,7 @@ use App\Http\Controllers\ResepsionisController;
 */
 
 Route::get('/', function () {
-    return view('user.kamar');
+    return view('user.home');
 });
 Route::get('/admin', function () {
     return view('template/app');
@@ -31,6 +31,9 @@ Route::get('/dashboard', function () {
 });
 Route::get('/resepsionis', function () {
     return view('resepsionis/dashboard');
+});
+Route::get('/struk', function () {
+    return view('user.struk');
 });
 
 
@@ -72,8 +75,8 @@ Route::group(['prefix' => 'resepsionis', 'middleware'=>['isResepsionis','auth']]
 
 
 // home
-Route::get('/user-home', function () {
-    return view('user.home');
+Route::get('/user-kamar', function () {
+    return view('user.kamar');
 });
 //fasilitas//
 Route::get('/user-fasilitas', function () {

@@ -42,7 +42,7 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a  href="/user-home">Home</a></li>
+                                        <li><a  href="/">Home</a></li>
                                         <li><a  href="/user-kamar">Kamar</a></li>
                                         <li><a class="active" href="/user-fasilitas">Fasilitas</a></li>
                                         <li><a href="#">Login</li>      

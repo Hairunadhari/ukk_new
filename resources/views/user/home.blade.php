@@ -42,10 +42,10 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="/user-home">Home</a></li>
+                                        <li><a class="active" href="/">Home</a></li>
                                         <li><a href="/user-kamar">Kamar</a></li>
                                         <li><a href="/user-fasilitas">Fasilitas</a></li>
-                                        <li><a href="/user-login">Login</li>      
+                                        <li><a href="/login">Login</li>      
                                     </ul>
                                 </nav>
                             </div>
@@ -54,8 +54,8 @@
                         <div class="col-xl-5 col-lg-4 d-none d-lg-block">
                             <div class="book_room">
                                
-                                <div class="book_btn d-none d-lg-block">
-                                <a class="popup-with-form" href="#test-form">Pesan</a>
+                                <div class="">
+                                <a class="popup-with-form" style="color: white" href="#test-form">Pesan</a>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +347,7 @@
         <form id="test-form" class="white-popup-block mfp-hide">
                 <div class="popup_box ">
                         <div class="popup_inner">
-                            <h3>Check Availability</h3>
+                            <h3>Cek Pesanan</h3>
                             <form action="#">
                                 <div class="row">
                                     <div class="col-xl-6">
@@ -356,22 +356,11 @@
                                     <div class="col-xl-6">
                                         <input id="datepicker2" placeholder="Check out date">
                                     </div>
-                                    <div class="col-xl-6">
-                                        <select class="form-select wide" id="default-select" class="">
-                                            <option data-display="Adult">1</option>
-                                            <option value="1">2</option>
-                                            <option value="2">3</option>
-                                            <option value="3">4</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <select class="form-select wide" id="default-select" class="">
-                                            <option data-display="Children">1</option>
-                                            <option value="1">2</option>
-                                            <option value="2">3</option>
-                                            <option value="3">4</option>
-                                        </select>
-                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="harga kamar" aria-label="Username">
+                                       
+                                        <input type="text" class="form-control" placeholder="jumlah kamar" aria-label="Server">
+                                      </div>
                                     <div class="col-xl-12">
                                         <select class="form-select wide" id="default-select" class="">
                                             <option data-display="Room type">Room type</option>

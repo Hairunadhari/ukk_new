@@ -26,14 +26,14 @@
 <div class="container">
   <main>
     <div class="py-5 text-center">
-      <h2>Pembayaran</h2>
+      <h2>Detail Pembayaran</h2>
     </div>
 
     <div class="row g-5 " style="margin-left: 300px">
       <div class="col-md-5 col-lg-4 order-md-last">      
       </div>
      <div class="col-md-7 col-lg-8">
-        <h4 class="mb-3">Alamat Penagihan</h4>
+        
         <form class="needs-validation" novalidate>
           <div class="row g-3">
            
@@ -72,7 +72,7 @@
 
           </div>
 
-          <a class="w-100 btn btn-primary btn-lg" href="/struk" type="submit">Continue to checkout</a>
+          <a class="w-100 btn btn-primary btn-lg" href="/" type="submit">kembali ke halaman utama</a>
         </form>
       </div>
     </div>

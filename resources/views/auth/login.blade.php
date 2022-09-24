@@ -11,8 +11,80 @@
 </head>
 <body>
     
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="container" >
+        <div  class="card m-auto" style="height: 500px; width: 500px; position: relative; top: 100px;">
+            <div class="card-body" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                <h2 class="text-center">VIGOOD</h2>
+                <div class="one" style="display: flex; justify-content: center; ">
+                    @if (Route::has('login'))
+                         <a href="{{ route('login') }}">{{ __('Login') }}</a>
+                    @endif /
+                    @if (Route::has('register'))
+                          <a href="{{ route('register') }}">{{ __('Register') }}</a>
+                    @endif
+                </div>
+                
+                <form method="POST" action="{{ route('login') }}" style="margin-top: 40px; margin-right: 0px;">
+                    @csrf
+
+                    <div class="row mb-3">
+                        <label for="email" class="col-md-4 col-form-label text-md-end"></label>
+                        <div class="">
+                            <div>Email</div>
+                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="password" class="col-md-4 col-form-label text-md-end"></label>
+
+                        <div class="">
+                            <div>Password</div>
+                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                <label class="form-check-label" for="remember">
+                                    {{ __('Remember Me') }}
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-0">
+                        <div class="col-md-6 text-center" style="margin-left: 120px">
+                            <button type="submit" class="btn btn-primary">
+                                {{ __('Login') }}
+                            </button>
+
+                            @if (Route::has('password.request'))
+                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    {{ __('Forgot Your Password?') }}
+                                </a>
+                            @endif
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        {{-- <div class="row justify-content-center">
             
             <div class="col-md-8">
                 <div class="card">
@@ -84,7 +156,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
